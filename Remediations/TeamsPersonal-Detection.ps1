@@ -19,7 +19,7 @@ of the Sample Code.
 
 try {
  
-    $TeamsApp = Get-AppxPackage "*Teams*" -AllUsers  -ErrorAction SilentlyContinue
+    $TeamsApp = Get-AppxPackage "MicrosoftTeams" -AllUsers  -ErrorAction SilentlyContinue
     if ($TeamsApp.Name -eq "MicrosoftTeams")
         {
             Write-Host "Built-in Teams Chat App Detected"
