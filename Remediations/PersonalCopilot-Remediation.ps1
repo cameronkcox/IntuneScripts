@@ -22,7 +22,7 @@ Try{
     Get-AppxPackage -Name "Microsoft.Copilot" -AllUsers | Remove-AppxPackage -AllUsers
     Get-AppXProvisionedPackage -Online | Where {$_.DisplayName -eq "Microsoft.Copilot"} | Remove-AppxProvisionedPackage -Online
  
-    Write-Host "Built-In Personal Copilot app is uninstalled"
+    Write-Host "Built-In Personal Copilot App is uninstalled"
     Exit 0
 }
 catch {
